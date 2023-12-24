@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Page</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  
+  <div class="content">
+
+    <!-- left hand container -->
+    <div class="lhs">
+        <img width="77.33px" height="80px" style="flex-shrink: 0;" src="./assets/Logo.png" alt="">
+        <p class="lhs-heading">For Individuals</p>
+        <p class="lhs-text">
+          <span class="for-desktop">
+            Start benefiting from the wellness experience.
+          For companies looking on increasing productivity, and improving
+          organization wellness.
+          </span>
+
+          <span class="for-mobile">
+            Inspiring wholesome harmony for the mind, body and spirit, for everyone, everywhere.
+          </span>
+        </p>
+    </div>
+
+    <!-- right hand side - bio-data form -->
+      <div class="signup-form">
+
+        <!-- first row  - names -->
+        <div class="names row info-row">
+          <div class="bio-data first-name">
+              <label for="firstName">First Name</label>
+              <input type="text" name="firstName" id="firstName" placeholder="John" required>
+          </div>
+          <div class="bio-data last-name">
+              <label for="lastName">Last Name</label>
+              <input type="text" name="lastName" id="lastName" placeholder="Doe" required>
+          </div>
+        </div>
+
+        <!-- second row -->
+        <div class="gender-and-dob row info-row">
+            <div class="bio-data gender">
+              <label for="gender">Gender</label><br>
+              <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+
+            <div class="bio-data dOB">
+              <label for="dob">Date of Birth</label><br>
+              <input type="date" id="dob" name="dob" required>
+            </div>
+        </div>
+
+<!-- third row -->
+        <div class="measurements row info-row">
+          <div class="bio-data weight">
+            <label for="weight">Weight (KG):</label><br>
+            <input type="number" placeholder="Enter Weight" id="weight" name="weight" required>
+          </div>
+
+          <div class="bio-data height">
+            <label for="height">Height (CM):</label><br>
+            <input type="number" placeholder="Enter Height Here.." id="height" name="height" required>
+          </div>
+        </div>
+        
+
+        <div class="row form-row full-width activity-row">
+            <label for="activityLevel">Activity Level</label><br>
+            <select id="activityLevel" name="activityLevel" required>
+                <option value="sedentary">Sedentary</option>
+                <option value="light">Lightly Active</option>
+                <option value="moderate">Moderately Active</option>
+                <option value="active">Very Active</option>
+            </select>
+        </div>
+
+        <div class="row form-row full-width password-row">
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" required>
+        </div>
+        
+        <button type="submit">Register</button>
+
+        <div class="t-and-c">
+          <p>By clicking Register, you agree to our <a href="">Terms of Use</a> and our <a href="">Privacy Policy</a></p>
+        </div>
+
+      </div>  
+      
+      <center class="t-and-c-for-mobile for-mobile">
+          <p>By clicking Register, you agree to our <a href="">Terms of Use</a> and our <a href="">Privacy Policy</a></p>      
+      </center>
+      
+
+  </div>
+</body>
+</html>
